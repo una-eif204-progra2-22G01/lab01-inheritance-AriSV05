@@ -1,7 +1,6 @@
 
 #include "Derived1.h"
 
-
 const string &Derived1::getText() const {
     return Base::getText();
 }
@@ -15,5 +14,7 @@ Derived1::~Derived1() {
 }
 
 string Derived1::toString() {
-    return Base::toString();
+    stringstream ss;
+    ss <<"Derived1!!"<<std::endl;
+    return ss.str();
 }

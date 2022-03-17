@@ -14,5 +14,7 @@ Derived2::~Derived2() {
 }
 
 string Derived2::toString() {
-    return Base::toString();
+    stringstream ss;
+    ss <<"Derived2!!"<<std::endl;
+    return ss.str();
 }

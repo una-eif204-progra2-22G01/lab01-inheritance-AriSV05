@@ -2,8 +2,10 @@
 #define LAB01_BASE_H
 
 #include <iostream>
+#include <sstream>
 
 using std::string;
+using std::stringstream;
 
 class Base {
 

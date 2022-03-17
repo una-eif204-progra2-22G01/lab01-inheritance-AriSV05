@@ -17,5 +17,7 @@ void Base::setText(const string &text) {
 }
 
 string Base::toString() {
-    return std::string();
+    stringstream ss;
+    ss <<" "<<std::endl;
+    return ss.str();
 }
