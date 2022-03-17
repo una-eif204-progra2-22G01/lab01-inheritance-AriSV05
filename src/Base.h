@@ -13,7 +13,7 @@ private:
     string text;
 
 public:
-    Base(const string &text);
+    Base();
 
     virtual const string &getText() const;
 

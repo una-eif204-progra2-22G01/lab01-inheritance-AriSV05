@@ -2,7 +2,7 @@
 #include "Base.h"
 
 
-Base::Base(const string &text) : text(text) {}
+Base::Base() {}
 
 Base::~Base() {
 

@@ -10,11 +10,12 @@ void Derived2::setText(const string &text) {
 }
 
 Derived2::~Derived2() {
-
+    setText(" ");
 }
 
 string Derived2::toString() {
     stringstream ss;
     ss <<"Derived2!!"<<std::endl;
+    //ss<<getText()<<std::endl;
     return ss.str();
 }
