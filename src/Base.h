@@ -7,13 +7,11 @@ using std::string;
 
 class Base {
 
-
 private:
     string text;
 
-
 public:
-    Base();
+    Base(const string &text);
 
     virtual const string &getText() const;
 
@@ -22,7 +20,6 @@ public:
     virtual ~Base();
 
     virtual string toString();
-
 };
 
 

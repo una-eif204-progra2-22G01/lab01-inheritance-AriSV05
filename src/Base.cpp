@@ -1,12 +1,21 @@
 
 #include "Base.h"
 
-Base::Base() {}
 
-Base::~Base() {}
+Base::Base(const string &text) : text(text) {}
 
-const string &Base::getText() const {}
+Base::~Base() {
 
-void Base::setText(const string &text) {}
+}
 
-string Base::toString() {}
+const string &Base::getText() const {
+    return text;
+}
+
+void Base::setText(const string &text) {
+    Base::text = text;
+}
+
+string Base::toString() {
+    return std::string();
+}
