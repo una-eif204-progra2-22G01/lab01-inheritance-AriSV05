@@ -9,19 +9,10 @@ using std::stringstream;
 
 class Base {
 
-private:
-    string text;
-
 public:
-    Base();
-
-    virtual const string &getText() const;
-
-    virtual void setText(const string &text);
-
     virtual ~Base();
 
-    virtual string toString();
+    virtual string toString() = 0;
 };
 
 

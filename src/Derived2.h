@@ -7,10 +7,15 @@
 
 class Derived2 : public Base{
 
-public:
-    const string &getText() const override;
+private:
+    string text;
 
-    void setText(const string &text) override;
+public:
+    Derived2();
+
+    const string &getText() const;
+
+    void setText(const string &text);
 
     ~Derived2() override;
 

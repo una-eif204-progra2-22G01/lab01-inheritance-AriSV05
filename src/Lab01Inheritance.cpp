@@ -1,4 +1,4 @@
-#include <iostream>  // allows program to output data to the screen
+/*#include <iostream>  // allows program to output data to the screen
 
 using std::cout;
 using std::endl;
@@ -20,7 +20,7 @@ struct Derived2 : Base {        //Base and Derived2 are public classes
 };
 
 // function main begins program execution
-/*
+
 int main(int argc, const char *argv[]) {
     cout << "Welcome to the UNA!" << endl;
 
