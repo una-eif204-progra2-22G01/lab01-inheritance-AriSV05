@@ -10,6 +10,8 @@ using std::stringstream;
 class Base {
 
 public:
+    Base();
+
     virtual ~Base();
 
     virtual string toString() = 0;
