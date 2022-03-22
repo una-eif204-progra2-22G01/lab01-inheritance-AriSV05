@@ -17,7 +17,7 @@ public:
 
     void setText(const string &text);
 
-    ~Derived1() override;
+    virtual ~Derived1() override;
 
     string toString() override;
 };
