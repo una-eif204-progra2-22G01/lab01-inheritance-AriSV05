@@ -1,4 +1,3 @@
-
 #include "Derived2.h"
 
 Derived2::Derived2() {
@@ -6,14 +5,13 @@ Derived2::Derived2() {
 }
 
 Derived2::~Derived2() {
-    setText(" ");
+    this->text= "";
 }
 
-string Derived2::toString() {
-    stringstream ss;
-    ss <<"Derived2!!"<<std::endl;
-    ss<<getText()<<std::endl;
-    return ss.str();
+void Derived2::doSomething() {
+
+    setText("Derived2!!");
+
 }
 
 void Derived2::setText(const string &text) {
@@ -22,4 +20,10 @@ void Derived2::setText(const string &text) {
 
 const string &Derived2::getText() const {
     return text;
+}
+
+string Derived2::toString() {
+    stringstream ss;
+    ss << getText();
+    return ss.str();
 }

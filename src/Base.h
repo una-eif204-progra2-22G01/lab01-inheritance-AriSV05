@@ -14,6 +14,7 @@ public:
 
     virtual ~Base();
 
+    virtual void doSomething() = 0;
     virtual string toString() = 0;
 };
 
